@@ -1,0 +1,8 @@
+faster-whisper>=1.0
+rapidfuzz>=3.0
+pyyaml>=6.0
+pillow>=10.1
+numpy
+# Optional:
+# arabic-reshaper python-bidi   -> Persian labels if your Pillow lacks libraqm
+# cairosvg                      -> use .svg logos directly

@@ -1,0 +1,73 @@
+# Names the tool listens for, and what to show for each.
+#
+#   name:    how you write it; also used as a hint so Whisper spells it this way
+#   image:   PNG/JPG (or SVG with cairosvg) in the assets folder; leave it out
+#            and the card just shows the name as text
+#   label:   optional text under the image (Persian works)
+#   aliases: other ways the name may come out in the transcript, especially
+#            Persian spellings. Spaces, half-spaces and ي/ی differences are
+#            ignored, and endings like "اپله" or "گوگلی" still match.
+
+settings:
+  language: fa        # en for English videos
+  model: large-v3     # best for Persian; "small" is faster for quick tests
+  threshold: 86       # raise if wrong cards appear, lower if names are missed
+  cooldown: 20        # seconds before the same card can appear again
+  card_y: 0.09        # card position from the top (0.09 = upper part, above your face)
+  # font: fonts/Vazirmatn-Bold.ttf
+
+entities:
+  # --- Companies ---
+  - name: Oura
+    image: assets/oura.png
+    aliases: [Oura Ring, اورا, اورا رینگ, اوورا]
+  - name: WHOOP
+    image: assets/whoop.png
+    aliases: [Whoop, ووپ]
+  - name: Garmin
+    image: assets/garmin.png
+    aliases: [گارمین]
+  - name: Apple Watch
+    image: assets/apple_watch.png
+    aliases: [اپل واچ]
+  - name: Apple
+    image: assets/apple.png
+    aliases: [اپل]
+  - name: Dexcom
+    image: assets/dexcom.png
+    aliases: [دکسکام, دکس کام]
+  - name: Abbott
+    image: assets/abbott.png
+    aliases: [ابوت, ابات]
+  - name: PulseAI
+    image: assets/pulseai.png
+    aliases: [Pulse AI, پالس ای آی]   # not plain "پالس": that's an ordinary word ("pulse")
+  - name: OpenEvidence
+    image: assets/openevidence.png
+    aliases: [Open Evidence, اوپن اویدنس, اپن اویدنس, اوپن اویدنز]
+  - name: Google
+    image: assets/google.png
+    aliases: [گوگل]
+  - name: Nvidia
+    image: assets/nvidia.png
+    aliases: [NVIDIA, انویدیا]
+
+  # --- Institutions and journals ---
+  - name: FDA
+    image: assets/fda.png
+    aliases: [اف دی ای]
+  - name: Stanford
+    image: assets/stanford.png
+    aliases: [استنفورد, استنفرد]
+  - name: Nature Medicine
+    image: assets/nature_medicine.png
+    aliases: [نیچر مدیسن, نیچر مدیسین]
+  - name: The Lancet
+    image: assets/lancet.png
+    aliases: [Lancet, لنست, لنسیت]
+
+  # --- People (a label under the photo helps viewers) ---
+  - name: Eran Segal
+    image: assets/eran_segal.jpg
+    label: Eran Segal
+    aliases: [اران سگال, ایران سگال]

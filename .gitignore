@@ -1,0 +1,44 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / local tooling
+.cursor/
+.specstory/
+.autopilot.json
+.cursorindexingignore
+tmp/
+
+# Generated overlays and rendered video
+*_overlay/
+*_final.mp4
+*.mp4
+*.mov
+*.mkv
+*.webm
+
+# Whisper / Hugging Face caches if they land in the repo
+.cache/
+models/
+*.bin
+*.pt
